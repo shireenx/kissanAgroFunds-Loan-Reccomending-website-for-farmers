@@ -1,0 +1,85 @@
+.cover {
+    position: relative;
+    padding: 0px 30px;
+    margin-top: 100px;
+  }
+  
+  .left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .scroll-images {
+    position: relative;
+    width: 100%;
+    padding: 50px 0px;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 550px;
+    height: 500px;
+    padding: 0px 150px;
+    margin: 1px 100px;
+    border-radius: 20px;
+    border: 1px solid #f1f1f1;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 10%);;
+    box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 10%);;
+  }
+  
+  .child img, .child > svg {
+    position: absolute;
+    margin-top: -247px;
+    width: 291px;
+    height: 291px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+ 
+  
+  }
+  
+  .scroll-images::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #aaa;
+  }
+  
+  .scroll-images::-webkit-scrollbar-thumb {
+    background-color: black;
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 25px;
+  }
+
+  .button1 {
+    padding-top: 350px;
+  }
+
+  .button1 button{
+    background-color: #03A9F4;
+  }

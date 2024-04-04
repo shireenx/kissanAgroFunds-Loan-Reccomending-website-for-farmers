@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/main2.css">
+</head>
+<body>
+    
+
+<h1>Loans To Choose</h1>
+         <% var id=0 %>
+          <% loans.forEach(loan=> { %>
+
+            <ul class="accordion"> 
+              
+              <li>
+                  <input type="radio" name="accordion" id="<%= id %>" >
+                  <label for="<%= id %>"> <%=loan.name%></label>
+                  <div class="content">
+                      
+              <p>
+                        
+              <p><b>Purpose: </b><%= loan.purpose %></p>
+              <br>
+              <p><b>Eligibilty: </b><%= loan.elig %></p>
+              <br>
+              <p><b>Amount: </b><%= loan.amount %></p>
+              <br>
+              <p><b>Margin: </b><%= loan.margin %></p>
+              <br>
+              <p><b>Rate Of Interest: </b><%= loan.rof %></p>
+              <br>
+              <p><b>Security: </b><%= loan.security %></p>
+              <br>
+              <p><b>Repayment: </b><%= loan.repayment %></p>
+              <br>
+              <p><b>Documents required: </b><%= loan.docs %></p>
+              <br>
+              <p><b>Loan Type: </b><%=loan.type %></p>
+              <br>
+              
+              <a class="edit" href="https://bomloans.com/agriloan?bom"> apply </a>
+              </p>
+                </div>
+              </li>
+          </ul>
+          <% id=id+1 %>
+          <% }); %>
+            
+           
+</body>
+</html>

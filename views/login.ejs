@@ -1,0 +1,72 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #113828;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .login-container {
+          background-color:#9bb89f;
+          border-radius: 15px;
+            
+            padding: 80px;
+            width: 300px;
+            -webkit-box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 10%);;
+    box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 10%);;
+        }
+        
+        .login-container h2 {
+            margin-top: 0;
+            text-align: center;
+        }
+        
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            background-color: ghostwhite;
+        }
+        
+        .login-form button {
+            width: 321.33px;
+            padding: 10px;
+            border: none;
+            background-color: darkcyan;
+            color: #fff;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        
+        .login-form button:hover {
+          background-color: darkslategray;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+          <form class="login-form" action="/login" method="POST">
+    
+            <input id="ip1" type="text" name="username" placeholder="+91-" required style="width: 300px;">
+            <input id="ip2" type="password" name="password" placeholder="Password" required style="width: 300px;">
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
